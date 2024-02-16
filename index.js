@@ -14,15 +14,14 @@ const { Boom } = require("@hapi/boom");
 const PORT = process.env.PORT ||  5000
 const MESSAGE = process.env.MESSAGE ||  `
 ╔════◇
-║ *『 WAOW YOU CHOOSE SUHAIL-MD 』*
-║ _You complete first step to making Bot._
+║ *『 WOW YOU CHOOSEN GIFTED-MD 』*
+║ _You Have Completed the First Step to Deploy Whatsapp Bot._
 ╚════════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║ *Ytube:* _youtube.com/SuhailTechInfo_
-║ *Owner:* _https://wa.me/923184474176_
-║ *Note :*_Don't provide your SESSION_ID to_
-║ _anyone otherwise that can access chats_
+║ *Ytube:* _youtube.com/@giftedtechnexus_
+║ *Owner:* _https://wa.me/254728782591_
+║ 
 ╚════════════════════════╝
 `
 
@@ -42,12 +41,12 @@ if (fs.existsSync('./auth_info_baileys')) {
   
   app.use("/", async(req, res) => {
 
-  const { default: SuhailWASocket, useMultiFileAuthState, Browsers, delay,DisconnectReason, makeInMemoryStore, } = require("@whiskeysockets/baileys");
+  const { default: GiftedWASocket, useMultiFileAuthState, Browsers, delay,DisconnectReason, makeInMemoryStore, } = require("@whiskeysockets/baileys");
   const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
-  async function SUHAIL() {
+  async function GIFTED() {
     const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys')
     try {
-      let Smd =SuhailWASocket({ 
+      let Smd =GiftedWASocket({ 
         printQRInTerminal: false,
         logger: pino({ level: "silent" }), 
         browser: Browsers.baileys("Desktop"),
@@ -94,16 +93,16 @@ SESSION-ID ==> ${Scan_Id}
             // console.log("Reason : ",DisconnectReason[reason])
             if (reason === DisconnectReason.connectionClosed) {
               console.log("Connection closed!")
-             // SUHAIL().catch(err => console.log(err));
+             // GIFTED().catch(err => console.log(err));
             } else if (reason === DisconnectReason.connectionLost) {
                 console.log("Connection Lost from Server!")
-            //  SUHAIL().catch(err => console.log(err));
+            //  GIFTEDL().catch(err => console.log(err));
             } else if (reason === DisconnectReason.restartRequired) {
                 console.log("Restart Required, Restarting...")
-              SUHAIL().catch(err => console.log(err));
+              GIFTED().catch(err => console.log(err));
             } else if (reason === DisconnectReason.timedOut) {
                 console.log("Connection TimedOut!")
-             // SUHAIL().catch(err => console.log(err));
+             // GIFTED().catch(err => console.log(err));
             }  else {
                 console.log('Connection closed with bot. Please run again.');
                 console.log(reason)
@@ -127,12 +126,12 @@ SESSION-ID ==> ${Scan_Id}
 
 
 
-  SUHAIL().catch(async(err) => {
+  GIFTED().catch(async(err) => {
     console.log(err)
     await fs.emptyDirSync(__dirname+'/auth_info_baileys'); 
 
 
-    //// MADE WITH 
+    //// MADE WITH GIFTED TECH
 
 });
 
