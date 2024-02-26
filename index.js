@@ -14,13 +14,13 @@ const { Boom } = require("@hapi/boom");
 const PORT = process.env.PORT ||  5000
 const MESSAGE = process.env.MESSAGE ||  `
 ╔════◇
-║ *『 WOW YOU CHOOSEN GIFTED-MD 』*
+║ *『 OK YOU HAVE SUCCESSFULLY SCANNED YOUR SESSION 』*
 ║ _You Have Completed the First Step to Deploy Whatsapp Bot._
 ╚════════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║ *Ytube:* _youtube.com/@giftedtechnexus_
-║ *Owner:* _https://wa.me/254728782591_
+║ Owner name KIMG IBRAHIM
+║ *Owner:* +254710772666
 ║ 
 ╚════════════════════════╝
 `
